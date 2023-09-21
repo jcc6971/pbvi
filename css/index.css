@@ -1,3 +1,7 @@
-.body {
-  background: black;
+body {
+  min-height: 100vh;
+  background: url(../images/background_pierre.jpg) center/cover;
+}
+p {
+  color: blueviolet;
 }

@@ -5,6 +5,8 @@
 body {
   min-height: 100vh;
   background: url(../images/background_pierre.jpg) center/cover;
+  
+  
 }
 nav ul{
   display: flex;
@@ -24,11 +26,35 @@ a{
 }
 li:hover{
   transform: scale(1.5);
-  transition: 1s;
+  transition: 1s ;
+}
+.logocomplet{
+  margin-top: 100px;
+}
+.logo{
+  width: 300px;
+  display: block;
+  margin: 0 auto;
 }
 h1{
+  margin: 30px;
   text-align: center;
   font-family: "allura";
-  font-size: 6rem;
-  color: rgb(252, 217, 165);
+  font-size: 4rem;
+  background: linear-gradient(#B58114 ,#F8E891);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.presentation{
+  width: 90%;
+  margin: 0 auto;
+}
+p{
+margin-top: 2px;
+margin-bottom: 10px;
+  text-align: center;
+  font-family: "allura";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: blanchedalmond;
 }

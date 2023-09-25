@@ -1,0 +1,32 @@
+@font-face{
+    font-family: allura;
+    src: url(../fonts/Allura-Regular.ttf);
+  }
+  body {
+    min-height: 100vh;
+    background: url(../images/background_pierre.jpg) center/cover;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  li{
+    list-style: none;
+    font-family:"allura" ;
+    font-size: 2.5rem  ;
+  }
+  a{
+    text-decoration: none;
+    color: blanchedalmond;
+    
+  
+  }
+  li:hover{
+    transform: scale(1.5);}
+    h1{
+      text-align: center;
+      font-family: "allura";
+      font-size: 6rem;
+      color: rgb(252, 217, 165);
+    }

@@ -32,6 +32,9 @@ a {
 
   text-shadow: 11px 7px 4px black;
 }
+li {
+  transition: 1s;
+}
 li:hover {
   transform: scale(1.5);
   transition: 1s ease;

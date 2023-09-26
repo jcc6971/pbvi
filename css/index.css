@@ -1,60 +1,62 @@
-@font-face{
+@font-face {
   font-family: allura;
   src: url(../fonts/Allura-Regular.ttf);
 }
 body {
   min-height: 100vh;
   background: url(../images/background_pierre.jpg) center/cover;
-  
-  
 }
-nav ul{
+
+nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-li{
+li {
   list-style: none;
-  font-family:"allura" ;
-  font-size: 2.5rem  ;
+  font-family: "allura";
+  font-size: 2rem;
 }
-a{
+a {
   text-decoration: none;
   color: blanchedalmond;
-  
 
+  text-shadow: 11px 7px 4px black;
 }
-li:hover{
+li:hover {
   transform: scale(1.5);
-  transition: 1s ;
+  transition: 1s ease;
 }
-.logocomplet{
-  margin-top: 100px;
+
+.logocomplet {
+  margin-top: 50px;
 }
-.logo{
-  width: 300px;
+.logo {
+  width: 250px;
   display: block;
   margin: 0 auto;
+  filter: drop-shadow(30px 10px 8px black);
 }
-h1{
-  margin: 30px;
+h1 {
+  margin: 0;
   text-align: center;
   font-family: "allura";
-  font-size: 4rem;
-  background: linear-gradient(#B58114 ,#F8E891);
+  font-size: 3.5rem;
+
+  background: linear-gradient(#b58114, #f8e891);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.presentation{
+.presentation {
   width: 90%;
   margin: 0 auto;
 }
-p{
-margin-top: 2px;
-margin-bottom: 10px;
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   font-family: "allura";
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: blanchedalmond;
 }

@@ -18,7 +18,30 @@
         </ul>
     </nav>
     <h1>Contact</h1>
-    <div class="form">
+    <!--
+Les balises <form> sert à dire que c'est un formulaire
+on lui demande de faire fonctionner la page contact.php
+une fois le bouton "Envoyer" cliqué on lui dit également que c'est un formulaire de type "POST"
+Les balises <input> sont les champs de formulaire
+type="text" sera du texte
+la balise <textarea> sert à dire qu'il faut afficher un champ de texte rectangulaire (les sauts de ligne sont possibles) au contraire des champ input text
+Vous remarquerez que l'ont ne renseigne pas le type (type="") pour la balise textarea
+cols="nombre de colone horizontale" rows="nombre de colone verticales"
+type="submit" sera un bouton pour valider le formulaire
+name="nom de l'input" sert à le reconnaitre une fois le bouton submit cliqué, pour le code PHP contact.php
+-->
+    <form action="contact.php" method="post">
+        Mail: <input type="text" name="mail" value="" />
+        <br />
+        Sujet: <input type="text" name="sujet" value="" />
+        <br />
+        Message: <textarea name="message" cols="40" rows="20"></textarea>
+        <br />
+        <input type="submit" name="envoyer" value="Envoyer" />
+    </form>
+
+
+    <!-- <div class="form">
         <form><label for="nom">Nom</label><br /> <input name="nom" type="text" value="votre nom" /> </form>
 
         <form>
@@ -58,7 +81,7 @@
 
 
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 </body>
 
 </html>

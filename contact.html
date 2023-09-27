@@ -18,6 +18,47 @@
         </ul>
     </nav>
     <h1>Contact</h1>
+    <div class="form">
+        <form><label for="nom">Nom</label><br /> <input name="nom" type="text" value="votre nom" /> </form>
+
+        <form>
+            <label for="prenom">prénom</label><br />
+            <input name="prenom" type="text" value="votre prénom" /> <br />
+        </form>
+
+        <form>
+            <label for="email">Email</label><br />
+            <input name="email" type="text" value="votre email" /> <br />
+        </form>
+
+        <form>
+            <label for="message">Message</label><br />
+            <textarea cols="30" rows="2">Long text.</textarea><br />
+        </form>
+
+
+
+        <input type="button" onClick="sendEmail()" />
+        <script type="text/javascript">
+            function sendEmail() {
+                Email.send({
+                    SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
+                    Password: "BpMbge59#",
+                    To: 'dji1969@hotmail.com',
+                    From: "you@isp.com",
+                    Subject: "ceci est l'objet",
+                    Body: "Et ceci est le message"
+                }).then(
+                    message => alert(message)
+                );
+            }
+        </script>
+    </div>
+
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

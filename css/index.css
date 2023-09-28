@@ -29,7 +29,7 @@ body {
   width: 60px;
   height: 10px;
   border-radius: 5px;
-  background: #09fbba;
+  background: blanchedalmond;
   display: block;
   margin-top: 5px;
   transition: 0.3s ease;
@@ -99,6 +99,7 @@ h1 {
 
   background: linear-gradient(#b58114, #f8e891);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .presentation {

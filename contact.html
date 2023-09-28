@@ -30,12 +30,15 @@ cols="nombre de colone horizontale" rows="nombre de colone verticales"
 type="submit" sera un bouton pour valider le formulaire
 name="nom de l'input" sert à le reconnaitre une fois le bouton submit cliqué, pour le code PHP contact.php
 -->
-    <form action="contact.php" method="post">
-        Mail: <input type="text" name="mail" value="" />
+    <form action="./contact.php" method="post">
+        <label for="mail">Email:</label>
+        <input type="text" name="mail" placeholder="adresse@hebergeur.com" />
         <br />
-        Sujet: <input type="text" name="sujet" value="" />
+        <label for="sujet">Sujet:</label>
+        <input type="text" name="sujet" placeholder="renseignements" />
         <br />
-        Message: <textarea name="message" cols="40" rows="20"></textarea>
+        <label for="message">Message:</label>
+        <textarea name="message" cols="40" rows="20" placeholder=" votre message"></textarea>
         <br />
         <input type="submit" name="envoyer" value="Envoyer" />
     </form>

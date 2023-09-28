@@ -6,6 +6,48 @@ body {
   min-height: 100vh;
   background: black center/cover;
 }
+/* #side-bar {
+  position: absolute;
+  width: 230px;
+  height: 100%;
+  background: #09fbba;
+  top: 0;
+  left: 0px;
+  transition: 0.5s ease-out;
+  z-index: 4;
+} */
+.toggle-btn {
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 50px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+.toggle-btn span {
+  width: 60px;
+  height: 10px;
+  border-radius: 5px;
+  background: #09fbba;
+  display: block;
+  margin-top: 5px;
+  transition: 0.3s ease;
+}
+.span1 {
+  transform: translateY(50%) rotate(45deg);
+  margin-top: 0 !important;
+  transition: 0.3s ease;
+}
+.span2 {
+  display: none !important;
+}
+.span3 {
+  transform: translateY(-50%) rotate(-45deg);
+  margin-top: 0 !important;
+  transition: 0.3s ease;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -72,4 +114,12 @@ p {
   font-size: 1.2rem;
 
   color: blanchedalmond;
+}
+@media screen and (max-width: 700px) {
+  nav {
+    display: none;
+  }
+  .toggle-btn {
+    display: block;
+  }
 }

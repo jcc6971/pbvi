@@ -26,25 +26,12 @@ body {
   width: 50px;
 }
 .toggle-btn span {
-  width: 60px;
-  height: 10px;
+  width: 50px;
+  height: 6px;
   border-radius: 5px;
   background: blanchedalmond;
   display: block;
   margin-top: 5px;
-  transition: 0.3s ease;
-}
-.span1 {
-  transform: translateY(50%) rotate(45deg);
-  margin-top: 0 !important;
-  transition: 0.3s ease;
-}
-.span2 {
-  display: none !important;
-}
-.span3 {
-  transform: translateY(-50%) rotate(-45deg);
-  margin-top: 0 !important;
   transition: 0.3s ease;
 }
 

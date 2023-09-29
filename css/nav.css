@@ -1,0 +1,61 @@
+.toggle-btn {
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 50px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+.toggle-btn span {
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  background: blanchedalmond;
+  display: block;
+  margin-top: 5px;
+  transition: 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+nav {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  top: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+  font-family: "allura";
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  color: blanchedalmond;
+
+  text-shadow: 11px 7px 4px black;
+}
+li {
+  transition: 1s;
+}
+li:hover {
+  transform: scale(1.5);
+  transition: 1s ease;
+}
+@media screen and (max-width: 700px) {
+  nav {
+    display: none;
+  }
+  .toggle-btn {
+    display: block;
+  }
+}

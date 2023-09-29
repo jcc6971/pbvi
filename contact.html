@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="./css/styles_contact.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Accueil</a></li>
-            <li><a href="./realisations.html">Nos Réalisations</a> </li>
-            <li><a href="./atelier.html">Notre atelier</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Contact</h1>
-    <!--
+    <div id="side-bar">
+        <div class="toggle-btn" id="btn">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./realisations.html">Nos Réalisations</a> </li>
+                <li><a href="./atelier.html">Notre atelier</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Contact</h1>
+        <!--
 Les balises <form> sert à dire que c'est un formulaire
 on lui demande de faire fonctionner la page contact.php
 une fois le bouton "Envoyer" cliqué on lui dit également que c'est un formulaire de type "POST"
@@ -30,21 +38,21 @@ cols="nombre de colone horizontale" rows="nombre de colone verticales"
 type="submit" sera un bouton pour valider le formulaire
 name="nom de l'input" sert à le reconnaitre une fois le bouton submit cliqué, pour le code PHP contact.php
 -->
-    <form action="./contact.php" method="post">
-        <label for="mail">Email:</label>
-        <input type="text" name="mail" placeholder="adresse@hebergeur.com" />
-        <br />
-        <label for="sujet">Sujet:</label>
-        <input type="text" name="sujet" placeholder="renseignements" />
-        <br />
-        <label for="message">Message:</label>
-        <textarea name="message" cols="40" rows="20" placeholder=" votre message"></textarea>
-        <br />
-        <input type="submit" name="envoyer" value="Envoyer" />
-    </form>
+        <form action="./contact.php" method="post">
+            <label for="mail">Email:</label>
+            <input type="text" name="mail" placeholder="adresse@hebergeur.com" />
+            <br />
+            <label for="sujet">Sujet:</label>
+            <input type="text" name="sujet" placeholder="renseignements" />
+            <br />
+            <label for="message">Message:</label>
+            <textarea name="message" cols="40" rows="20" placeholder=" votre message"></textarea>
+            <br />
+            <input type="submit" name="envoyer" value="Envoyer" />
+        </form>
 
 
-    <!-- <div class="form">
+        <!-- <div class="form">
         <form><label for="nom">Nom</label><br /> <input name="nom" type="text" value="votre nom" /> </form>
 
         <form>

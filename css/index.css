@@ -6,71 +6,10 @@ body {
   min-height: 100vh;
   background: black center/cover;
 }
-/* #side-bar {
-  position: absolute;
-  width: 230px;
-  height: 100%;
-  background: #09fbba;
-  top: 0;
-  left: 0px;
-  transition: 0.5s ease-out;
-  z-index: 4;
-} */
-.toggle-btn {
-  display: none;
-  position: fixed;
-  top: 30px;
-  left: 50px;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-}
-.toggle-btn span {
-  width: 50px;
-  height: 6px;
-  border-radius: 5px;
-  background: blanchedalmond;
-  display: block;
-  margin-top: 5px;
-  transition: 0.3s ease;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-}
-nav {
-  z-index: 2;
-  width: 100%;
-  position: fixed;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-li {
-  list-style: none;
-  font-family: "allura";
-  font-size: 2rem;
-}
-a {
-  text-decoration: none;
-  color: blanchedalmond;
-
-  text-shadow: 11px 7px 4px black;
-}
-li {
-  transition: 1s;
-}
-li:hover {
-  transform: scale(1.5);
-  transition: 1s ease;
-}
 
 .logocomplet {
   margin-top: 150px;
+  background: black;
 }
 .logo {
   width: 250px;
@@ -89,6 +28,7 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .presentation {
   width: 90%;
   margin: 0 auto;

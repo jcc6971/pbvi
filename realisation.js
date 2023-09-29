@@ -1,10 +1,15 @@
 const image = document.querySelectorAll(".img");
 
+function cardcreate() {
+  popup = document.createElement("div");
+  popup.className = "popup";
+}
+
 image.forEach((img) => {
   img.addEventListener("click", (e) => {
     if (typeof popup === "undefined") {
-      popup = document.createElement("div");
-      popup.className = "popup";
+      cardcreate();
+
       document.body.appendChild(popup);
       popup.innerHTML = `
       <i class="fa-regular fa-circle-xmark fa-lg" id="croix"></i>
@@ -20,12 +25,19 @@ image.forEach((img) => {
     }
   });
 });
-
-// img.addEventListener("mouseout", () => {
-//   setTimeout(() => {
-//     console.log("ok");
-//     popup.remove();
-//   }, 2);
+// pierresel = document.querySelector(".pierresel");
+// pierresel.addEventListener("click", (e) => {
+//   console.log("ok");
 // });
+// choix =
+//   document.getElementById("select").options[
+//     document.getElementById("select").selectedIndex
+//   ].text;
 
-//   console.log(e.target.src);
+select.addEventListener("click", (e) => {
+  choix =
+    document.getElementById("select").options[
+      document.getElementById("select").selectedIndex
+    ].text;
+  console.log(choix);
+});

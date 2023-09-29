@@ -26,6 +26,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 10px;
+  background: black;
 }
 
 nav ul {

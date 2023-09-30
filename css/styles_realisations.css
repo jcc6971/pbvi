@@ -5,6 +5,7 @@
 body {
   min-height: 100vh;
   background: black;
+  cursor: default;
 }
 .navreal {
   font-size: 2.2rem;
@@ -19,22 +20,29 @@ body {
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 100px;
+  top: 85px;
   width: 70%;
   background: black;
-  border: red solid 2px;
+  /* border: red solid 2px; */
 }
 .titre {
   display: flex;
   justify-content: space-around;
   color: blanchedalmond;
 }
+h2 {
+  padding: 0;
+  margin: 0;
+  font-family: "allura";
+  font-size: 2rem;
+}
 h3 {
   color: blanchedalmond;
 }
 
 .imgreal {
-  border: red solid 2px;
+  /* border: red solid 2px; */
+  width: 100%;
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -65,15 +73,27 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-.h3exterieur {
-  border: red solid 1px;
-}
+
 .exterieur h4 {
   margin-top: 1px;
   margin-bottom: 3px;
 }
 .pierres h3 {
   scroll-margin-top: 400px;
+  text-align: center;
+}
+.pierres {
+  /* border: red 1px solid; */
+  width: 50%;
+}
+
+.briques {
+  width: 50%;
+  /* border: red 1px solid; */
+}
+.sousmenupierres {
+  /* border: red solid 2px; */
+  margin-left: 20px;
 }
 
 .popup {

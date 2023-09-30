@@ -102,7 +102,7 @@ h3 {
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
   left: 50%;
-  width: 500px;
+  width: 25%;
 }
 .popup img {
   border: solid 3px blanchedalmond;
@@ -115,4 +115,26 @@ h3 {
   top: 4%;
   color: blanchedalmond;
   font-size: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .popup {
+    z-index: 400;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    width: 70%;
+  }
+  .popup img {
+    border: solid 3px blanchedalmond;
+    border-radius: 15px;
+    width: 100%;
+  }
+  #croix {
+    position: absolute;
+    right: 1%;
+    top: 4%;
+    color: blanchedalmond;
+    font-size: 2rem;
+  }
 }

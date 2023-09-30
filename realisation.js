@@ -1,4 +1,6 @@
 const image = document.querySelectorAll(".img");
+const pierresmenu = document.querySelector(".h3exterieur");
+const listpierre = document.querySelector(".exterieur");
 
 function cardcreate() {
   popup = document.createElement("div");
@@ -12,8 +14,8 @@ image.forEach((img) => {
 
       document.body.appendChild(popup);
       popup.innerHTML = `
-      <i class="fa-regular fa-circle-xmark fa-lg" id="croix"></i>
-        <img src="${e.target.src}" width="100%"/>
+            <i class="fa-regular fa-circle-xmark fa-lg" id="croix"></i>
+            <img src="${e.target.src}" width="100%"/>
         `;
       croix = document.getElementById("croix");
       croix.addEventListener("click", () => {
@@ -25,19 +27,19 @@ image.forEach((img) => {
     }
   });
 });
-// pierresel = document.querySelector(".pierresel");
-// pierresel.addEventListener("click", (e) => {
-//   console.log("ok");
-// });
-// choix =
-//   document.getElementById("select").options[
-//     document.getElementById("select").selectedIndex
-//   ].text;
 
-select.addEventListener("click", (e) => {
-  choix =
-    document.getElementById("select").options[
-      document.getElementById("select").selectedIndex
-    ].text;
-  console.log(choix);
+// affichage menu
+
+pierresmenu.addEventListener("mouseover", (e) => {
+  listpierre.style.visibility = "visible";
+});
+listpierre.addEventListener("mouseover", (e) => {
+  listpierre.style.visibility = "visible";
+});
+listpierre.addEventListener("mouseout", (e) => {
+  listpierre.style.visibility = "hidden";
+});
+
+pierresmenu.addEventListener("mouseout", (e) => {
+  listpierre.style.visibility = "hidden";
 });

@@ -21,12 +21,12 @@
 }
 
 .navbar {
-  /* border: red 1px solid; */
   display: flex;
   flex-direction: row;
   top: 80px;
 }
 nav {
+  /* border: red 1px solid; */
   z-index: 2;
   width: 100%;
   position: fixed;

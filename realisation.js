@@ -1,6 +1,10 @@
 const image = document.querySelectorAll(".img");
-const pierresmenu = document.querySelector(".h3exterieur");
-const listpierre = document.querySelector(".exterieur");
+
+const h2pierres = document.querySelector(".h2pierres");
+const h3pierresmenu = document.querySelector(".h3pierresmenu");
+
+const h3exterieur = document.querySelector(".h3exterieur");
+const menuexterieur = document.querySelector(".titreexterieurh3");
 
 function cardcreate() {
   popup = document.createElement("div");
@@ -28,18 +32,31 @@ image.forEach((img) => {
   });
 });
 
-// affichage menu
+// affichage menu pierres
 
-pierresmenu.addEventListener("mouseover", (e) => {
-  listpierre.style.visibility = "visible";
+h2pierres.addEventListener("mouseover", (e) => {
+  h3pierresmenu.style.visibility = "visible";
 });
-listpierre.addEventListener("mouseover", (e) => {
-  listpierre.style.visibility = "visible";
+h2pierres.addEventListener("mouseout", (e) => {
+  h3pierresmenu.style.visibility = "hidden";
 });
-listpierre.addEventListener("mouseout", (e) => {
-  listpierre.style.visibility = "hidden";
+h3pierresmenu.addEventListener("mouseover", (e) => {
+  h3pierresmenu.style.visibility = "visible";
 });
+h3pierresmenu.addEventListener("mouseout", (e) => {
+  h3pierresmenu.style.visibility = "hidden";
+});
+// affichage menu pierres exterieur
 
-pierresmenu.addEventListener("mouseout", (e) => {
-  listpierre.style.visibility = "hidden";
+h3exterieur.addEventListener("mouseover", (e) => {
+  menuexterieur.style.visibility = "visible";
+});
+h3exterieur.addEventListener("mouseout", (e) => {
+  menuexterieur.style.visibility = "hidden";
+});
+menuexterieur.addEventListener("mouseover", (e) => {
+  menuexterieur.style.visibility = "visible";
+});
+menuexterieur.addEventListener("mouseout", (e) => {
+  menuexterieur.style.visibility = "hidden";
 });

@@ -21,7 +21,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   top: 85px;
-  width: 70%;
+  width: 100%;
   background: black;
   /* border: red solid 2px; */
 }
@@ -51,6 +51,7 @@ h3 {
 
 .imgproduits {
   position: relative;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;

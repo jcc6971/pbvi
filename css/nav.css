@@ -1,4 +1,6 @@
 .toggle-btn {
+  /* border: red 1px solid; */
+
   display: none;
   position: fixed;
   top: 30px;
@@ -6,6 +8,7 @@
   cursor: pointer;
   height: 50px;
   width: 50px;
+  z-index: 5;
 }
 .toggle-btn span {
   width: 50px;
@@ -45,18 +48,39 @@ a {
 
   text-shadow: 11px 7px 4px black;
 }
-li {
+nav ul li {
   transition: 1s;
 }
-li:hover {
+nav ul li:hover {
   transform: scale(1.5);
   transition: 1s ease;
 }
 @media screen and (max-width: 700px) {
-  nav {
-    display: none;
-  }
   .toggle-btn {
     display: block;
+  }
+  .navbar {
+    position: fixed;
+    z-index: 200;
+    left: 100px;
+  }
+
+  nav {
+    display: none;
+    position: relative;
+    border: 1px blanchedalmond solid;
+    border-radius: 10px;
+  }
+  nav ul {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li:hover {
+    transform: none;
+  }
+  .realisation {
+    display: none;
   }
 }

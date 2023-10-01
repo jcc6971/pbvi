@@ -1,4 +1,4 @@
-const sidebar = document.getElementById("side-bar");
+const sidebar = document.getElementById("btn");
 const navbar = document.getElementById("navbar");
 let flagnav;
 sidebar.addEventListener("click", (e) => {

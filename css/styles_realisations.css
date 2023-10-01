@@ -38,8 +38,13 @@ h3 {
   width: 100%;
   position: absolute;
   display: flex;
+
   justify-content: space-between;
+
   top: 300px;
+}
+.pierres {
+  margin: 0 auto;
 }
 
 .imgproduits {
@@ -111,6 +116,14 @@ h3 {
   font-size: 2rem;
 }
 @media screen and (max-width: 700px) {
+  .realisation {
+    /* display: none; */
+  }
+  .imgreal {
+    display: flex;
+    flex-direction: column;
+  }
+
   .popup {
     z-index: 400;
     position: fixed;

@@ -88,7 +88,4 @@ nav ul li:hover {
   nav ul li:hover {
     transform: none;
   }
-  .realisation {
-    display: none;
-  }
 }

@@ -36,6 +36,7 @@ p {
   width: 100%;
   position: fixed;
   top: 105px;
+  left: 0;
   background: black;
   /* border: red solid 2px; */
   display: flex;
@@ -76,6 +77,20 @@ p {
   box-shadow: blanchedalmond 8px -5px 16px 0px;
 }
 
+.menusalledebainh3 {
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  position: absolute;
+  width: 250px;
+  top: 0px;
+  left: 150px;
+  background: black;
+  border: 1px blanchedalmond solid;
+  border-radius: 30px;
+  box-shadow: blanchedalmond 8px -5px 16px 0px;
+}
+
 .realisationbriques {
   width: 50%;
   /* border: red solid 2px; */
@@ -83,12 +98,12 @@ p {
 
 .imgreal {
   /* border: red solid 2px; */
-  width: 100%;
+  width: 99%;
   position: absolute;
   display: flex;
 
   justify-content: space-between;
-
+  left: 0;
   top: 300px;
 }
 .pierres {
@@ -188,9 +203,13 @@ p {
     border-radius: 30px;
     box-shadow: blanchedalmond 8px -5px 16px 0px;
   }
-  .imgreal {
+
+  /* .imgreal {
     display: flex;
     flex-direction: column;
+  } */
+  .imgproduits img {
+    width: 88px;
   }
 
   .popup {

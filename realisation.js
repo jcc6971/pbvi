@@ -6,6 +6,9 @@ const h3pierresmenu = document.querySelector(".h3pierresmenu");
 const h3exterieur = document.querySelector(".h3exterieur");
 const menuexterieur = document.querySelector(".titreexterieurh3");
 
+const h3salledebain = document.querySelector(".h3salledebain");
+const menusalledebainh3 = document.querySelector(".menusalledebainh3");
+
 function cardcreate() {
   popup = document.createElement("div");
   popup.className = "popup";
@@ -62,4 +65,19 @@ menuexterieur.addEventListener("mouseout", (e) => {
 });
 menuexterieur.addEventListener("click", (e) => {
   menuexterieur.style.visibility = "hidden";
+});
+
+// affichage menu salle de bain
+
+h3salledebain.addEventListener("mouseover", (e) => {
+  menusalledebainh3.style.visibility = "visible";
+});
+h3salledebain.addEventListener("mouseout", (e) => {
+  menusalledebainh3.style.visibility = "hidden";
+});
+menusalledebainh3.addEventListener("mouseover", (e) => {
+  menusalledebainh3.style.visibility = "visible";
+});
+menusalledebainh3.addEventListener("mouseout", (e) => {
+  menusalledebainh3.style.visibility = "hidden";
 });

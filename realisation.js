@@ -65,6 +65,7 @@ menuexterieur.addEventListener("mouseout", (e) => {
 });
 menuexterieur.addEventListener("click", (e) => {
   menuexterieur.style.visibility = "hidden";
+  h3pierresmenu.style.visibility = "hidden";
 });
 
 // affichage menu salle de bain

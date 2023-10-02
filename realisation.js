@@ -1,4 +1,4 @@
-const image = document.querySelectorAll(".img");
+const image = document.querySelectorAll(".img,.imgvh");
 
 const h2pierres = document.querySelector(".h2pierres");
 const h3pierresmenu = document.querySelector(".h3pierresmenu");

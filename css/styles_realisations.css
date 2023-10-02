@@ -195,6 +195,10 @@ p {
   .imgreal h3 {
     font-size: 1rem;
   }
+  .menuexterieur h4 {
+    font-size: 1rem;
+    margin: 8px;
+  }
   .h3pierresmenu {
     visibility: hidden;
     text-align: center;

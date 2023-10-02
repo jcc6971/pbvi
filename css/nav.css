@@ -56,7 +56,7 @@ nav ul li:hover {
   transform: scale(1.5);
   transition: 1s ease;
 }
-.activepage {
+.activepage a {
   font-size: 2.2rem;
   color: red;
 }
@@ -68,6 +68,7 @@ nav ul li:hover {
     display: block;
   }
   .navbar {
+    background: black;
     position: fixed;
     z-index: 200;
     left: 100px;
@@ -78,11 +79,16 @@ nav ul li:hover {
     position: relative;
     border: 1px blanchedalmond solid;
     border-radius: 10px;
+    box-shadow: blanchedalmond 8px -5px 16px 0px;
   }
   nav ul {
+    padding: 5px;
+    margin: 5px;
     display: block;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+  }
+  nav ul li {
+    margin: 0 auto;
   }
 
   nav ul li:hover {

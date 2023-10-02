@@ -6,7 +6,7 @@ sidebar.addEventListener("click", (e) => {
   flagnav = true;
 });
 
-document.body.addEventListener("mouseon", (e) => {
-  //   if (flagnav === true) navbar.style.display = "none";
-  console.log(flagnav);
-});
+// document.body.addEventListener("click", (e) => {
+//   navbar.style.display = "none";
+//   console.log(flagnav);
+// });

@@ -95,7 +95,10 @@ p {
   border-radius: 30px;
   box-shadow: blanchedalmond 8px -5px 16px 0px;
 }
-
+.menuexterieur h4 {
+  font-size: 1rem;
+  margin: 6px;
+}
 .realisationbriques {
   width: 50%;
   /* border: red solid 2px; */
@@ -254,42 +257,3 @@ p {
     font-size: 2rem;
   }
 }
-
-/* .pierresmenu {
-    display: none;
-    position: relative;
-  }
-  .sousmenupierres {
-    border: red solid 2px;
-    position: absolute;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    top: 0px;
-    left: 65px;
-    border: 1px blanchedalmond solid;
-    border-radius: 30px;
-    box-shadow: blanchedalmond 8px -5px 16px 0px;
-    margin-left: 20px;
-    display: none;
-  }
-  
-  .exterieurmenu {
-    position: relative;
-  }
-  .exterieur {
-    visibility: hidden;
-    background: black;
-    width: 300px;
-    position: absolute;
-    left: 100px;
-    top: -50px;
-    border: 1px blanchedalmond solid;
-    border-radius: 30px;
-    box-shadow: blanchedalmond 8px -5px 16px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */

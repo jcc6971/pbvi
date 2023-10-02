@@ -60,3 +60,6 @@ menuexterieur.addEventListener("mouseover", (e) => {
 menuexterieur.addEventListener("mouseout", (e) => {
   menuexterieur.style.visibility = "hidden";
 });
+menuexterieur.addEventListener("click", (e) => {
+  menuexterieur.style.visibility = "hidden";
+});

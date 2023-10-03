@@ -207,6 +207,10 @@ p {
     display: flex;
     justify-content: center;
   }
+  .titrebriquesh2 {
+    display: flex;
+    justify-content: center;
+  }
 
   .h2pierres,
   .h2briques {

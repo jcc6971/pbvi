@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles_contact.css">
     <link rel="stylesheet" href="./css/nav.css">
 </head>
-</head>
+
 
 <body>
     <div id="side-bar">
@@ -17,19 +17,42 @@
             <span id="span2"></span>
             <span id="span3"></span>
         </div>
-        <div class="navbar">
+    </div>
+    <div class="navbar">
 
-            <nav id="navbar">
-                <ul>
-                    <li><a href="./index.html">Accueil</a></li>
-                    <li><a href="./realisations.html">Nos Réalisations</a> </li>
-                    <li><a href="./atelier.html">Notre atelier</a></li>
-                    <li class="activepage"><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <h1>Contact</h1>
-        <!--
+        <nav id="navbar">
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./realisations.html">Nos Réalisations</a> </li>
+                <li><a href="./atelier.html">Notre atelier</a></li>
+                <li class="activepage"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Contact</h1>
+    <h2>site en construction</h2>
+
+    <p>Notre atelier est situé au 221ter Route D AVESNES
+        59720 LOUVROIL, nous vous recevons <strong>sur rendez-vous</strong></p>
+    <div class="plan">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.918865908849!2d3.9563726768727605!3d50.25609960133801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c269648330733d%3A0x10a29fa932c2b244!2sPierres%26Briques!5e0!3m2!1sfr!2sbe!4v1696362927831!5m2!1sfr!2sbe"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <p>Contactez nous au ...</p>
+    <div class="planmobile">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.918865908849!2d3.9563726768727605!3d50.25609960133801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c269648330733d%3A0x10a29fa932c2b244!2sPierres%26Briques!5e0!3m2!1sfr!2sbe!4v1696362927831!5m2!1sfr!2sbe"
+            width="220" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <!--
 Les balises <form> sert à dire que c'est un formulaire
 on lui demande de faire fonctionner la page contact.php
 une fois le bouton "Envoyer" cliqué on lui dit également que c'est un formulaire de type "POST"
@@ -41,40 +64,60 @@ cols="nombre de colone horizontale" rows="nombre de colone verticales"
 type="submit" sera un bouton pour valider le formulaire
 name="nom de l'input" sert à le reconnaitre une fois le bouton submit cliqué, pour le code PHP contact.php
 -->
-        <form action="./contact.php" method="post">
-            <label for="mail">Email:</label>
-            <input type="text" name="mail" placeholder="adresse@hebergeur.com" />
-            <br />
-            <label for="sujet">Sujet:</label>
-            <input type="text" name="sujet" placeholder="renseignements" />
-            <br />
-            <label for="message">Message:</label>
-            <textarea name="message" cols="40" rows="20" placeholder=" votre message"></textarea>
-            <br />
-            <input type="submit" name="envoyer" value="Envoyer" />
+    <h3>Formulaire de contact</h3>
+    <div class="formulaire">
+
+        <form class="form" action="./contact.php" method="post">
+
+            <div class="gauche">
+
+                <div class="email">
+
+                    <label for="mail">Email:</label>
+                    <input type="text" name="mail" placeholder="adresse@hebergeur.com" />
+                </div>
+
+                <div class="sujet">
+
+                    <label for="sujet">Sujet:</label>
+                    <input type="text" name="sujet" placeholder="renseignements" />
+                </div>
+                <input class="button" type="submit" name="envoyer" value="Envoyer" />
+            </div>
+            <div class="droite">
+
+
+                <div class="message">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" cols="40" rows="20" placeholder=" votre message"></textarea>
+                </div>
+            </div>
+
         </form>
+    </div>
 
 
-        <!-- <div class="form">
-        <form><label for="nom">Nom</label><br /> <input name="nom" type="text" value="votre nom" /> </form>
-
-        <form>
-            <label for="prenom">prénom</label><br />
-            <input name="prenom" type="text" value="votre prénom" /> <br />
-        </form>
-
-        <form>
-            <label for="email">Email</label><br />
-            <input name="email" type="text" value="votre email" /> <br />
-        </form>
-
-        <form>
-            <label for="message">Message</label><br />
-            <textarea cols="30" rows="2">Long text.</textarea><br />
-        </form>
-
-
-
+    <!-- <div class="form">
+            <form><label for="nom">Nom</label><br /> <input name="nom" type="text" value="votre nom" /> </form>
+            
+            <form>
+                <label for="prenom">prénom</label><br />
+                <input name="prenom" type="text" value="votre prénom" /> <br />
+            </form>
+            
+            <form>
+                <label for="email">Email</label><br />
+                <input name="email" type="text" value="votre email" /> <br />
+            </form>
+            
+            <form>
+                <label for="message">Message</label><br />
+                <textarea cols="30" rows="2">Long text.</textarea><br />
+            </form>
+            
+            
+            
         <input type="button" onClick="sendEmail()" />
         <script type="text/javascript">
             function sendEmail() {
@@ -96,7 +139,7 @@ name="nom de l'input" sert à le reconnaitre une fois le bouton submit cliqué, 
 
 
     <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-        <script src="./nav.js"></script>
+    <script src="./nav.js"></script>
 </body>
 
 </html>

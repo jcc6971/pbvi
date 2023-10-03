@@ -26,12 +26,123 @@ li:hover {
 h1 {
   text-align: center;
   font-family: "allura";
-  font-size: 6rem;
+  font-size: 4rem;
   color: rgb(252, 217, 165);
+  margin-top: 80px;
+}
+h2 {
+  text-align: center;
+
+  font-size: 1.5rem;
+  color: red;
+  margin-top: 80px;
+}
+p,
+h3 {
+  text-align: center;
+
+  font-size: 1.5rem;
+  color: rgb(252, 217, 165);
+  margin-top: 80px;
+}
+.plan {
+  display: flex;
+  justify-content: center;
+}
+.planmobile {
+  display: none;
+}
+.formulaire {
+  display: flex;
+  justify-content: center;
 }
 .form {
-  text-align: center;
+  display: flex;
+}
+.gauche {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* border: 1px red solid */
+}
+.email,
+.sujet {
+  color: blanchedalmond;
+  font-size: 1.2rem;
+}
+.button {
+  background: black;
+  color: blanchedalmond;
+  font-size: 0.9rem;
+  justify-content: center;
+  width: 80px;
+  border: 1px blanchedalmond solid;
+  box-shadow: blanchedalmond 3px -2px 7px 0px;
+  border-radius: 10px;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
 }
 label {
   color: blanchedalmond;
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .plan {
+    display: none;
+  }
+  .planmobile {
+    display: flex;
+    justify-content: center;
+  }
+  .formulaire {
+    display: block;
+    justify-content: center;
+  }
+  .form {
+    display: block;
+  }
+  .gauche {
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+  .email,
+  .sujet {
+    color: blanchedalmond;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+  }
+  .button {
+    background: black;
+    color: blanchedalmond;
+    font-size: 0.9rem;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 230px;
+    left: 50%;
+    width: 80px;
+    border: 1px blanchedalmond solid;
+    box-shadow: blanchedalmond 3px -2px 7px 0px;
+    border-radius: 10px;
+  }
+  .message {
+    display: block;
+    text-align: center;
+
+    font-size: 1.2rem;
+  }
+  textarea {
+    height: 100px;
+  }
+  label {
+    color: blanchedalmond;
+  }
 }

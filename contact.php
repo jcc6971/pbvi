@@ -26,7 +26,7 @@ if (isset($_POST['envoyer'])) {
                     $Entetes = "MIME-Version: 1.0\r\n";
                     $Entetes .= "Content-type: text/html; charset=UTF-8\r\n";
                     $Entetes .= "From: Nom de votre site <" . $_POST['mail'] . ">\r\n"; //de préférence une adresse avec le même domaine de là où, vous utilisez ce code, cela permet un envoie quasi certain jusqu'au destinataire
-                    $Entetes .= "Reply-To: Nom de votre site <" . $_POST['mail'] . ">\r\n";
+                    $Entetes .= "Reply-To: pierres-briques.com <" . $_POST['mail'] . ">\r\n";
                     //on prépare les champs:
                     $Mail = $_POST['mail'];
                     $Sujet = '=?UTF-8?B?' . base64_encode($_POST['sujet']) . '?='; //Cet encodage (base64_encode) est fait pour permettre aux informations binaires d'être manipulées par les systèmes qui ne gèrent pas correctement les 8 bits (=?UTF-8?B? est une norme afin de transmettre correctement les caractères de la chaine)

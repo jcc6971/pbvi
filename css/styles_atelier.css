@@ -30,3 +30,10 @@ h1 {
   font-size: 4.5rem;
   color: rgb(252, 217, 165);
 }
+h2 {
+  text-align: center;
+
+  font-size: 1.5rem;
+  color: red;
+  margin-top: 80px;
+}

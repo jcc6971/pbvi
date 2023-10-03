@@ -7,13 +7,7 @@ body {
   background: black;
   cursor: default;
 }
-h2 {
-  text-align: center;
-  font-family: "allura";
-  font-size: 2rem;
-  color: blanchedalmond;
-  padding-right: 5px;
-}
+
 h3 {
   color: blanchedalmond;
   font-size: 1rem;
@@ -56,6 +50,17 @@ p {
 .titrepierresh2 {
   position: relative;
 }
+.h2pierres,
+.h2briques {
+  text-align: center;
+  color: blanchedalmond;
+  font-size: 1.2rem;
+  border: 1px solid blanchedalmond;
+  box-shadow: blanchedalmond 8px -5px 16px 0px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+
 .h3pierresmenu {
   visibility: hidden;
   text-align: center;
@@ -101,6 +106,8 @@ p {
 }
 .realisationbriques {
   width: 50%;
+  display: flex;
+  justify-content: center;
   /* border: red solid 2px; */
 }
 
@@ -195,6 +202,18 @@ p {
   .realisation {
     top: 180px;
   }
+
+  .h2pierres,
+  .h2briques {
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 0.8rem;
+    border: 1px solid blanchedalmond;
+    box-shadow: blanchedalmond 3px -2px 7px 0px;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+  }
+
   .imgreal h3 {
     font-size: 1rem;
   }
@@ -208,8 +227,8 @@ p {
     position: absolute;
     width: 180px;
     transform: translateX(-50%) translateY(-50%);
-    left: 50px;
-    top: 140px;
+    left: 80px;
+    top: 120px;
     background: black;
     border: 1px blanchedalmond solid;
     border-radius: 30px;

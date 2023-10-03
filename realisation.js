@@ -9,6 +9,9 @@ const menuexterieur = document.querySelector(".titreexterieurh3");
 const h3salledebain = document.querySelector(".h3salledebain");
 const menusalledebainh3 = document.querySelector(".menusalledebainh3");
 
+const h3cuisine = document.querySelector(".h3cuisine");
+const menucuisineh3 = document.querySelector(".menucuisineh3");
+
 function cardcreate() {
   popup = document.createElement("div");
   popup.className = "popup";
@@ -84,5 +87,24 @@ menusalledebainh3.addEventListener("mouseout", (e) => {
 });
 menuexterieur.addEventListener("click", (e) => {
   menuexterieur.style.visibility = "hidden";
+  h3pierresmenu.style.visibility = "hidden";
+});
+
+// affichage menu cuisine
+
+h3cuisine.addEventListener("mouseover", (e) => {
+  menucuisineh3.style.visibility = "visible";
+});
+h3cuisine.addEventListener("mouseout", (e) => {
+  menucuisineh3.style.visibility = "hidden";
+});
+menucuisineh3.addEventListener("mouseover", (e) => {
+  menucuisineh3.style.visibility = "visible";
+});
+menucuisineh3.addEventListener("mouseout", (e) => {
+  menucuisineh3.style.visibility = "hidden";
+});
+menucuisineh3.addEventListener("click", (e) => {
+  menucuisineh3.style.visibility = "hidden";
   h3pierresmenu.style.visibility = "hidden";
 });

@@ -135,6 +135,7 @@ p {
 .imgproduits img {
   border: 2px solid blanchedalmond;
   box-shadow: blanchedalmond 8px -5px 16px 0px;
+  cursor: pointer;
 }
 
 .pierres h3 {
@@ -202,9 +203,14 @@ p {
   .realisation {
     top: 180px;
   }
+  .titrepierresh2 {
+    display: flex;
+    justify-content: center;
+  }
 
   .h2pierres,
   .h2briques {
+    width: 60%;
     text-align: center;
     color: blanchedalmond;
     font-size: 0.8rem;

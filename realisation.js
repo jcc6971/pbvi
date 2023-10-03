@@ -63,8 +63,8 @@ menuexterieur.addEventListener("mouseover", (e) => {
 menuexterieur.addEventListener("mouseout", (e) => {
   menuexterieur.style.visibility = "hidden";
 });
-menuexterieur.addEventListener("click", (e) => {
-  menuexterieur.style.visibility = "hidden";
+menusalledebainh3.addEventListener("click", (e) => {
+  menusalledebainh3.style.visibility = "hidden";
   h3pierresmenu.style.visibility = "hidden";
 });
 
@@ -81,4 +81,8 @@ menusalledebainh3.addEventListener("mouseover", (e) => {
 });
 menusalledebainh3.addEventListener("mouseout", (e) => {
   menusalledebainh3.style.visibility = "hidden";
+});
+menuexterieur.addEventListener("click", (e) => {
+  menuexterieur.style.visibility = "hidden";
+  h3pierresmenu.style.visibility = "hidden";
 });

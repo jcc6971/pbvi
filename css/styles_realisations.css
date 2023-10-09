@@ -1,312 +1,201 @@
-@font-face {
-  font-family: allura;
-  src: url(../fonts/Allura-Regular.ttf);
-}
 body {
-  min-height: 100vh;
-  background: black;
-  cursor: default;
-}
-
-h3 {
-  /* border: 1px red solid; */
-  color: blanchedalmond;
-  font-size: 1rem;
-  padding-right: 5px;
-}
-.paragraphe {
-  /* border: red solid 2px; */
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 99%;
-  height: 90px;
-  z-index: 2;
-  background: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #0b0b0b;
 }
 p {
-  /* border: red solid 2px; */
   color: blanchedalmond;
-  font-size: 1.2rem;
   text-align: center;
 }
 
-.realisation {
-  z-index: 2;
-  width: 99%;
-  position: fixed;
-  top: 160px;
-  left: 0;
-  background: black;
-  /* border: red solid 2px; */
-  display: flex;
-}
-.realisationpierres {
-  width: 50%;
-  /* border: red solid 2px; */
-  display: flex;
-  justify-content: center;
-}
-
-.titrepierresh2 {
+.page {
   position: relative;
+  top: 84px;
+  height: 90vh;
 }
-.pierres h2 {
-  color: blanchedalmond;
-  text-align: center;
-  text-decoration: underline;
-}
-.h2pierres,
-.h2briques {
-  text-align: center;
-  color: blanchedalmond;
-  font-size: 1.2rem;
-  border: 1px solid blanchedalmond;
-  box-shadow: blanchedalmond 8px -5px 16px 0px;
-  border-radius: 10px;
-  padding: 5px 10px 5px 10px;
-}
-
-.h3pierresmenu {
-  /* border: 1px red solid; */
-  visibility: hidden;
-  text-align: center;
-  position: absolute;
-  width: 180px;
-  transform: translateX(-50%) translateY(-50%);
-  left: 170px;
-  top: 80px;
-  background: black;
-  border: 1px blanchedalmond solid;
-  border-radius: 30px;
-  box-shadow: blanchedalmond 8px -5px 16px 0px;
-}
-.titreexterieurh3 {
-  visibility: hidden;
-  text-align: center;
-  position: absolute;
-  width: 250px;
-  top: 0px;
-  left: 150px;
-  background: black;
-  border: 1px blanchedalmond solid;
-  border-radius: 30px;
-  box-shadow: blanchedalmond 8px -5px 16px 0px;
-}
-
-.menusalledebainh3 {
-  position: absolute;
-  visibility: hidden;
-  text-align: center;
-  position: absolute;
-  width: 250px;
-  top: 0px;
-  left: 150px;
-  background: black;
-  border: 1px blanchedalmond solid;
-  border-radius: 30px;
-  box-shadow: blanchedalmond 8px -5px 16px 0px;
-}
-.menucuisineh3 {
-  position: absolute;
-  visibility: hidden;
-  text-align: center;
-  position: absolute;
-  width: 250px;
-  top: 55px;
-  left: 120px;
-  background: black;
-  border: 1px blanchedalmond solid;
-  border-radius: 30px;
-  box-shadow: blanchedalmond 8px -5px 16px 0px;
-}
-.menuexterieur h4 {
-  font-size: 1rem;
-  margin: 6px;
-}
-.realisationbriques {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  /* border: red solid 2px; */
-}
-
-.imgreal {
-  /* border: red solid 2px; */
-  width: 99%;
-  position: absolute;
-  display: flex;
-
-  justify-content: space-between;
-  left: 0;
-  top: 300px;
-}
-.pierres {
-  margin: 0 auto;
-}
-
-.imgproduits {
-  position: relative;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.imgproduits img {
-  border-radius: 20px;
-  /* border: 2px solid blanchedalmond; */
-  /* box-shadow: blanchedalmond 8px -5px 16px 0px; */
-  cursor: pointer;
-}
-
-.pierres h3 {
-  scroll-margin-top: 400px;
-  text-align: center;
-  text-decoration: underline;
-  font-size: 1.1rem;
-}
-.pierres {
-  border: blanchedalmond 4px solid;
-  border-radius: 10px;
-  width: 50%;
+.menu {
   display: flex;
   flex-direction: column;
 }
-.titresalledebainh3 {
-  visibility: hidden;
-  text-align: center;
-  position: absolute;
-  width: 250px;
-  top: 0px;
-  left: 170px;
-  background: black;
-  border: 1px blanchedalmond solid;
-  border-radius: 30px;
-  box-shadow: blanchedalmond 8px -5px 16px 0px;
-}
-
-.briques {
-  width: 50%;
-  border: blanchedalmond 4px solid;
-  border-radius: 10px;
-}
-.h3briquesmenu {
-  text-align: center;
-}
-
-.popup {
-  z-index: 400;
-  position: fixed;
-  transform: translateX(-50%) translateY(-50%);
-  top: 50%;
-  left: 50%;
-
+.exterieur {
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
-.popup .img {
-  border: solid 3px blanchedalmond;
-  border-radius: 15px;
+.h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border: blanchedalmond 3px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  color: blanchedalmond;
+  text-align: center;
+}
+h2 {
+  cursor: pointer;
+  padding: 10px 35px 10px 35px;
+}
+h3 {
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 2rem;
+}
+#appui {
+  background: url(../images/pierres/vignetteappli.PNG) center/ cover;
+}
+#linteau {
+  background: url(../images/pierres/vignettelinteau.png) center/ cover;
+}
+#chapeau {
+  background: url(../images/pierres/vignettechapeau.png) center;
+}
+#dessusmu {
+  background: url(../images/pierres/vignettedessusmu.png) center/cover;
+}
+#entourageporte {
+  background: url(../images/pierres/vignetteentourageporte.png) center/cover;
+  color: rgb(44, 44, 44);
+}
+#dallage {
+  background: url(../images/pierres/vignettedallage.PNG) center/cover;
+  color: rgb(44, 44, 44);
 }
 
 #croix {
+  visibility: hidden;
+  color: blanchedalmond;
   position: absolute;
-  right: 1%;
-  top: 5%;
-  color: gray;
+  z-index: 100;
+  left: 15px;
+  top: 30px;
   font-size: 2rem;
 }
-@media screen and (max-width: 900px) {
-  .paragraphe {
-    height: 110px;
-  }
-  p {
-    font-size: 0.9rem;
-  }
-  .realisation {
-    top: 182px;
-  }
-  .titrepierresh2 {
-    display: flex;
-    justify-content: center;
-  }
-  .titrebriquesh2 {
-    display: flex;
-    justify-content: center;
-  }
 
-  .h2pierres,
-  .h2briques {
-    width: 60%;
-    text-align: center;
-    color: blanchedalmond;
-    font-size: 0.8rem;
-    border: 1px solid blanchedalmond;
-    box-shadow: blanchedalmond 3px -2px 7px 0px;
-    border-radius: 20px;
-    padding: 5px 10px 5px 10px;
-  }
+/** img-carousel **/
+#imgages-carousel {
+  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  display: none;
+  border: blanchedalmond 5px solid;
+  border-radius: 20px;
+  background-color: black;
+  align-items: center;
+  justify-items: center;
+  padding: 40px 0px;
+  /* height: 60vh; */
+}
+.img-carousel-container {
+  width: 800px;
+  position: relative;
+}
+.img-carousel {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 5px;
+  height: 60vh;
+}
+.img-carousel div {
+  flex: none;
+  scroll-snap-align: start;
+  width: 800px;
+  position: relative;
+}
+.img-carousel div img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.img-carousel div p {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
 
-  .imgreal h3 {
-    font-size: 1rem;
-  }
-  .menuexterieur h4 {
-    font-size: 0.8rem;
-    margin: 6px;
-  }
-  .h3pierresmenu {
-    visibility: hidden;
-    text-align: center;
-    position: absolute;
-    width: 180px;
-    transform: translateX(-50%) translateY(-50%);
-    left: 80px;
-    top: 120px;
-    background: black;
-    border: 1px blanchedalmond solid;
-    border-radius: 30px;
-    box-shadow: blanchedalmond 8px -5px 16px 0px;
-  }
-  .titreexterieurh3 {
-    visibility: hidden;
-    text-align: center;
-    position: absolute;
-    width: 250px;
-    top: 50px;
-    left: 50px;
-    background: black;
-    border: 1px blanchedalmond solid;
-    border-radius: 30px;
-    box-shadow: blanchedalmond 8px -5px 16px 0px;
-  }
+.img-carousel-container button {
+  position: absolute;
+  top: calc(50% - 15px);
+  transform: translateY(-50%);
+  border: none;
+  background-color: rgba(255, 193, 7, 0.7);
+  color: #000;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  outline: none;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+#prev {
+  left: 10px;
+}
+#next {
+  right: 10px;
+}
+.img-carousel-container:hover button {
+  opacity: 1;
+}
+.img-carousel-container button:hover {
+  background-color: #ffc107;
+}
 
-  /* .imgreal {
-    display: flex;
-    flex-direction: column;
-  } */
-  .imgproduits img {
-    width: 70px;
-    border-radius: 5px;
-  }
+/** custom scrollbar **/
+.img-carousel::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.img-carousel::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 10px;
+  visibility: hidden;
+}
+.img-carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.img-carousel-container:hover .img-carousel::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
 
-  .popup {
-    z-index: 400;
-    position: fixed;
-    transform: translateX(-50%) translateY(-50%);
-    top: 50%;
-    left: 50%;
+@media screen and (max-width: 800px) {
+  .img-carousel {
+    height: 20vh;
   }
-  .popup img {
-    border: solid 3px blanchedalmond;
-    border-radius: 15px;
-    width: 80vw;
-    height: auto;
+  .img-carousel-container {
+    width: 280px;
   }
-  #croix {
-    position: absolute;
-    right: 1%;
-    top: 10%;
-    color: blanchedalmond;
-    font-size: 2rem;
+  .img-carousel div {
+    width: 100%;
   }
+}
+
+.myvideo {
+  text-decoration: none;
+  color: #fff;
+  background: red;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  z-index: 100;
+  position: absolute;
+  bottom: 0px;
+}
+.myvideo:hover {
+  color: #000;
 }

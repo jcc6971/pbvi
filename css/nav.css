@@ -1,3 +1,7 @@
+@font-face {
+  font-family: allura;
+  src: url(../fonts/Allura-Regular.ttf);
+}
 .cache {
   z-index: 2;
   position: fixed;
@@ -50,10 +54,10 @@ nav ul {
 }
 li {
   list-style: none;
-  font-family: "allura";
   font-size: 2rem;
 }
 a {
+  font-family: "allura";
   text-decoration: none;
   color: blanchedalmond;
 

@@ -1,110 +1,98 @@
-const image = document.querySelectorAll(".img,.imgvh");
+const carousel = document.querySelector(".img-carousel");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+let carsouselImages = document.querySelectorAll(".img-carousel div");
+const selectionh2 = document.querySelectorAll("h2");
+const imgagescarousel = document.getElementById("imgages-carousel");
 
-const h2pierres = document.querySelector(".h2pierres");
-const h3pierresmenu = document.querySelector(".h3pierresmenu");
-
-const h3exterieur = document.querySelector(".h3exterieur");
-const menuexterieur = document.querySelector(".titreexterieurh3");
-
-const h3salledebain = document.querySelector(".h3salledebain");
-const menusalledebainh3 = document.querySelector(".menusalledebainh3");
-
-const h3cuisine = document.querySelector(".h3cuisine");
-const menucuisineh3 = document.querySelector(".menucuisineh3");
-
-function cardcreate() {
-  popup = document.createElement("div");
-  popup.className = "popup";
-}
-
-image.forEach((img) => {
-  img.addEventListener("click", (e) => {
-    if (typeof popup === "undefined") {
-      cardcreate();
-
-      document.body.appendChild(popup);
-      popup.innerHTML = `
-            <i class="fa-regular fa-circle-xmark fa-lg" id="croix"></i>
-            <img src="${e.target.src}" width="100%"/>
-        `;
-      croix = document.getElementById("croix");
-      croix.addEventListener("click", () => {
-        setTimeout(() => {
-          popup.remove();
-          delete popup;
-        }, 2);
+selectionh2.forEach((list) => {
+  list.addEventListener("click", (e) => {
+    if (window.getComputedStyle(imgagescarousel).display == "none") {
+      imgagescarousel.style.display = "grid";
+      croix.style.visibility = "visible";
+      idlist = e.target.parentElement.id;
+      const appui = {
+        img1: "./images/pierres/" + idlist + "1.png",
+        img2: "./images/pierres/" + idlist + "2.png",
+        img3: "./images/pierres/" + idlist + "3.png",
+        img4: "./images/pierres/" + idlist + "4.png",
+        img5: "./images/pierres/" + idlist + "5.png",
+        img6: "./images/pierres/" + idlist + "6.png",
+      };
+      image1.src = appui.img1;
+      image2.src = appui.img2;
+      image3.src = appui.img3;
+      image4.src = appui.img4;
+      image5.src = appui.img5;
+      image6.src = appui.img6;
+      croix.addEventListener("click", (e) => {
+        imgagescarousel.style.display = "none";
       });
+      carousel.scrollTo(0, 0);
     }
   });
 });
 
-// affichage menu pierres
+//Next Carousel
+const nextCarousel = () => {
+  if (carsouselImages[carsouselImages.length - 1]) {
+    carousel.scrollTo(0, 0);
+  }
+  carousel.scrollBy(300, 0);
+};
 
-h2pierres.addEventListener("mouseover", (e) => {
-  h3pierresmenu.style.visibility = "visible";
-});
-h2pierres.addEventListener("mouseout", (e) => {
-  h3pierresmenu.style.visibility = "hidden";
-});
-h3pierresmenu.addEventListener("mouseover", (e) => {
-  h3pierresmenu.style.visibility = "visible";
-});
-h3pierresmenu.addEventListener("mouseout", (e) => {
-  h3pierresmenu.style.visibility = "hidden";
-});
-// affichage menu pierres exterieur
-
-h3exterieur.addEventListener("mouseover", (e) => {
-  menuexterieur.style.visibility = "visible";
-});
-h3exterieur.addEventListener("mouseout", (e) => {
-  menuexterieur.style.visibility = "hidden";
-});
-menuexterieur.addEventListener("mouseover", (e) => {
-  menuexterieur.style.visibility = "visible";
-});
-menuexterieur.addEventListener("mouseout", (e) => {
-  menuexterieur.style.visibility = "hidden";
-});
-menusalledebainh3.addEventListener("click", (e) => {
-  menusalledebainh3.style.visibility = "hidden";
-  h3pierresmenu.style.visibility = "hidden";
+nextBtn.addEventListener("click", (e) => {
+  nextCarousel();
 });
 
-// affichage menu salle de bain
+//Prev Carousel
+const prevCarousel = () => {
+  if (carsouselImages[0]) {
+    carousel.scrollTo(4800, 0);
+  }
+  carousel.scrollBy(-300, 0);
+};
 
-h3salledebain.addEventListener("mouseover", (e) => {
-  menusalledebainh3.style.visibility = "visible";
-});
-h3salledebain.addEventListener("mouseout", (e) => {
-  menusalledebainh3.style.visibility = "hidden";
-});
-menusalledebainh3.addEventListener("mouseover", (e) => {
-  menusalledebainh3.style.visibility = "visible";
-});
-menusalledebainh3.addEventListener("mouseout", (e) => {
-  menusalledebainh3.style.visibility = "hidden";
-});
-menuexterieur.addEventListener("click", (e) => {
-  menuexterieur.style.visibility = "hidden";
-  h3pierresmenu.style.visibility = "hidden";
+prevBtn.addEventListener("click", (e) => {
+  prevCarousel();
 });
 
-// affichage menu cuisine
+// Auto carousel
+const auto = true; // Auto scroll
+const intervalTime = 5000;
+let sliderInterval;
 
-h3cuisine.addEventListener("mouseover", (e) => {
-  menucuisineh3.style.visibility = "visible";
+if (auto) {
+  sliderInterval = setInterval(nextCarousel, intervalTime);
+}
+
+carousel.addEventListener("mouseover", (stopInterval) => {
+  clearInterval(sliderInterval);
 });
-h3cuisine.addEventListener("mouseout", (e) => {
-  menucuisineh3.style.visibility = "hidden";
+
+carousel.addEventListener("mouseleave", (startInterval) => {
+  if (auto) {
+    sliderInterval = setInterval(nextCarousel, intervalTime);
+  }
 });
-menucuisineh3.addEventListener("mouseover", (e) => {
-  menucuisineh3.style.visibility = "visible";
+
+//for mobile events
+carousel.addEventListener("touchstart", (stopIntervalT) => {
+  clearInterval(sliderInterval);
 });
-menucuisineh3.addEventListener("mouseout", (e) => {
-  menucuisineh3.style.visibility = "hidden";
+carousel.addEventListener("touchend", (startIntervalT) => {
+  if (auto) {
+    sliderInterval = setInterval(nextCarousel, intervalTime);
+  }
 });
-menucuisineh3.addEventListener("click", (e) => {
-  menucuisineh3.style.visibility = "hidden";
-  h3pierresmenu.style.visibility = "hidden";
+
+//Debounce
+var previousCall;
+window.addEventListener("resize", () => {
+  if (previousCall >= 0) {
+    clearTimeout(previousCall);
+  }
+  previousCall = setTimeout(() => {
+    carousel.scrollBy(-300, 0);
+  }, 200);
 });

@@ -23,12 +23,12 @@ a {
 li:hover {
   transform: scale(1.5);
 }
-h1 {
+.logo {
   text-align: center;
-  font-family: "allura";
-  font-size: 4rem;
-  color: rgb(252, 217, 165);
-  margin-top: 80px;
+  margin: 70px auto;
+}
+img {
+  width: 20%;
 }
 h2 {
   text-align: center;
@@ -43,7 +43,7 @@ h3 {
 
   font-size: 1.5rem;
   color: rgb(252, 217, 165);
-  margin-top: 80px;
+  /* margin-top: 30px; */
 }
 .plan {
   display: flex;
@@ -52,12 +52,17 @@ h3 {
 .planmobile {
   display: none;
 }
+.tel {
+  font-size: 1.8rem;
+}
 .formulaire {
   display: flex;
   justify-content: center;
 }
 .form {
   display: flex;
+  width: 50%;
+  justify-content: space-evenly;
 }
 .gauche {
   display: flex;
@@ -70,14 +75,18 @@ h3 {
 .email,
 .sujet {
   color: blanchedalmond;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+}
+input {
+  height: 30px;
+  width: 200px;
 }
 .button {
   background: black;
   color: blanchedalmond;
   font-size: 0.9rem;
   justify-content: center;
-  width: 80px;
+  width: 100px;
   border: 1px blanchedalmond solid;
   box-shadow: blanchedalmond 3px -2px 7px 0px;
   border-radius: 10px;
@@ -86,14 +95,22 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 label {
   color: blanchedalmond;
 }
 @media screen and (max-width: 900px) {
-  h1 {
-    font-size: 2.5rem;
+  .logo {
+    margin: 20px auto;
+    width: 100%;
+  }
+  img {
+    width: 70%;
+  }
+  p,
+  h3 {
+    margin-top: 20px;
   }
   .plan {
     display: none;
@@ -108,6 +125,7 @@ label {
   }
   .form {
     display: block;
+    width: 100%;
   }
   .gauche {
     display: block;
@@ -126,7 +144,7 @@ label {
     font-size: 0.9rem;
     position: absolute;
     transform: translateX(-50%) translateY(-50%);
-    top: 230px;
+    top: 250px;
     left: 50%;
     width: 80px;
     border: 1px blanchedalmond solid;

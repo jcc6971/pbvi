@@ -153,8 +153,9 @@ p {
   align-items: center;
 }
 .imgproduits img {
-  border: 2px solid blanchedalmond;
-  box-shadow: blanchedalmond 8px -5px 16px 0px;
+  border-radius: 20px;
+  /* border: 2px solid blanchedalmond; */
+  /* box-shadow: blanchedalmond 8px -5px 16px 0px; */
   cursor: pointer;
 }
 
@@ -165,7 +166,8 @@ p {
   font-size: 1.1rem;
 }
 .pierres {
-  /* border: red 1px solid; */
+  border: blanchedalmond 4px solid;
+  border-radius: 10px;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -185,7 +187,8 @@ p {
 
 .briques {
   width: 50%;
-  /* border: red 1px solid; */
+  border: blanchedalmond 4px solid;
+  border-radius: 10px;
 }
 .h3briquesmenu {
   text-align: center;
@@ -283,6 +286,7 @@ p {
   } */
   .imgproduits img {
     width: 70px;
+    border-radius: 5px;
   }
 
   .popup {

@@ -4,6 +4,7 @@ const nextBtn = document.getElementById("next");
 let carsouselImages = document.querySelectorAll(".img-carousel div");
 const selectionh2 = document.querySelectorAll("h2");
 const imgagescarousel = document.getElementById("imgages-carousel");
+const imgerror = document.getElementById("img");
 
 selectionh2.forEach((list) => {
   list.addEventListener("click", (e) => {
@@ -11,23 +12,58 @@ selectionh2.forEach((list) => {
       imgagescarousel.style.display = "grid";
       croix.style.visibility = "visible";
       idlist = e.target.parentElement.id;
+
       const appui = {
-        img1: "./images/pierres/" + idlist + "1.png",
-        img2: "./images/pierres/" + idlist + "2.png",
-        img3: "./images/pierres/" + idlist + "3.png",
-        img4: "./images/pierres/" + idlist + "4.png",
-        img5: "./images/pierres/" + idlist + "5.png",
-        img6: "./images/pierres/" + idlist + "6.png",
+        img1: "./images/pierres/" + idlist + "1.jpg",
+        img2: "./images/pierres/" + idlist + "2.jpg",
+        img3: "./images/pierres/" + idlist + "3.jpg",
+        img4: "./images/pierres/" + idlist + "4.jpg",
+        img5: "./images/pierres/" + idlist + "5.jpg",
+        img6: "./images/pierres/" + idlist + "6.jpg",
       };
+
       image1.src = appui.img1;
       image2.src = appui.img2;
       image3.src = appui.img3;
       image4.src = appui.img4;
       image5.src = appui.img5;
       image6.src = appui.img6;
+
+      image1.addEventListener("error", function handleError() {
+        const defaultImage = "./images/pierres/comingsoon.jpg";
+        image5.src = defaultImage;
+        image5.alt = "default";
+      });
+      image2.addEventListener("error", function handleError() {
+        const defaultImage = "./images/pierres/comingsoon.jpg";
+        image2.src = defaultImage;
+        image2.alt = "default";
+      });
+      image3.addEventListener("error", function handleError() {
+        const defaultImage = "./images/pierres/comingsoon.jpg";
+        image3.src = defaultImage;
+        image3.alt = "default";
+      });
+      image4.addEventListener("error", function handleError() {
+        const defaultImage = "./images/pierres/comingsoon.jpg";
+        image4.src = defaultImage;
+        image4.alt = "default";
+      });
+      image5.addEventListener("error", function handleError() {
+        const defaultImage = "./images/pierres/comingsoon.jpg";
+        image5.src = defaultImage;
+        image5.alt = "default";
+      });
+      image6.addEventListener("error", function handleError() {
+        const defaultImage = "./images/pierres/comingsoon.jpg";
+        image6.src = defaultImage;
+        image6.alt = "default";
+      });
+
       croix.addEventListener("click", (e) => {
         imgagescarousel.style.display = "none";
       });
+
       carousel.scrollTo(0, 0);
     }
   });

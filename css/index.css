@@ -1,22 +1,67 @@
-@font-face {
+/* @font-face {
   font-family: allura;
   src: url(../fonts/Allura-Regular.ttf);
-}
+} */
 body {
   min-height: 100vh;
   background: black center/cover;
 }
 
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #111111;
+  -webkit-animation: animBefore 2s ease forwards;
+  animation: animBefore 2s ease forwards;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-@keyframes logo {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes logo {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+main {
+  animation: logo 3s ease;
+}
 .logocomplet {
-  /* border: red 1px solid; */
   margin-top: 150px;
-  background: black;
+  background: rgba(0, 0, 0, 0);
 }
 .logo {
   width: 250px;
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(30px 10px 8px black);
+  /* filter: drop-shadow(30px 10px 8px black); */
 }
 h1 {
   margin: 0;

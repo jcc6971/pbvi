@@ -1,0 +1,495 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #0b0b0b;
+}
+/* ****scrolldownanim******** */
+.mouse {
+  background: beige;
+  width: 60px;
+  height: 100px;
+  border: 3px solid blanchedalmond;
+  border-radius: 60px;
+
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+  &::after {
+    content: "";
+    width: 2px;
+    height: 30px;
+    transform: translateX(-50%);
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
+.scroll {
+  position: fixed;
+  left: 15%;
+  top: 120px;
+
+  animation: apparition 8s forwards;
+  -webkit-animation: apparition 8s forwards;
+}
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+@-webkit-keyframes apparition {
+  from {
+    left: -200px;
+  }
+  50% {
+    left: 12%;
+  }
+  to {
+    left: 12%;
+    display: none;
+  }
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
+/* *******doigt scroll******** */
+.doigt {
+  display: none;
+  /* border: blanchedalmond 2px solid; */
+  background: #fec3ac;
+  position: fixed;
+  top: 450px;
+  left: 20%;
+  opacity: 0;
+  width: 15px;
+  height: 60px;
+  border-radius: 10px 10px 0 0;
+  transform: rotate(0.9turn);
+  animation: doigtscroll 5s 2;
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: blanchedalmond;
+    border-radius: 50% 50% 0 0;
+  }
+}
+@keyframes doigtscroll {
+  from {
+    opacity: 0;
+    top: 450px;
+  }
+  20% {
+    opacity: 1;
+    top: 450px;
+  }
+  80% {
+    opacity: 1;
+    top: 310px;
+  }
+  99% {
+    opacity: 0;
+    top: 310px;
+  }
+  to {
+    opacity: 0;
+    top: 310px;
+    display: none;
+  }
+}
+@-webkit-keyframes doigtscroll {
+  from {
+    opacity: 0;
+    top: 450px;
+  }
+  15% {
+    opacity: 1;
+    top: 450px;
+  }
+  80% {
+    opacity: 1;
+    top: 310px;
+  }
+  99% {
+    opacity: 0;
+    top: 310px;
+  }
+  to {
+    opacity: 0;
+    top: 310px;
+    display: none;
+  }
+}
+
+.logopage img {
+  width: 9%;
+  position: fixed;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 100px;
+}
+p {
+  position: relative;
+  top: 200px;
+}
+
+h1 {
+  font-family: "allura";
+  font-size: 3rem;
+  color: blanchedalmond;
+  text-align: center;
+  position: fixed;
+}
+h1 span {
+  font-size: 2rem;
+  animation: textanim 1s infinite alternate;
+}
+h3 {
+  margin-top: 100px;
+  color: blanchedalmond;
+  text-align: center;
+  font-family: "roboto";
+  text-decoration: underline;
+
+  font-size: 1.5rem;
+}
+p {
+  color: blanchedalmond;
+  text-align: center;
+}
+
+.page {
+  position: relative;
+  top: 84px;
+  height: 90vh;
+}
+.general {
+  position: relative;
+  top: 80px;
+  display: flex;
+}
+cursor {
+  color: blanche;
+}
+
+.pierre,
+.brique {
+  width: 50%;
+  height: 90vh;
+  overflow-y: scroll;
+}
+.pierre::-webkit-scrollbar {
+  display: none;
+}
+.brique::-webkit-scrollbar {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exterieur,
+.sdb,
+.cuisine,
+.mobilier {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border: #f8e891 2px solid;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  animation: textanim 4s infinite alternate;
+  font-family: "roboto";
+  font-size: 0.8rem;
+}
+h2 {
+  cursor: pointer;
+  padding: 10px 35px 10px 35px;
+  /* margin: 0 auto; */
+  padding: 0;
+}
+#appui {
+  background: url(../images/pierres/vignetteappli.png) center/ cover;
+}
+#bal {
+  background: url(../images/pierres/vignettebal.png) center/ cover;
+}
+#chapeau {
+  background: url(../images/pierres/vignettechapeau.png) center;
+}
+#dallage {
+  background: url(../images/pierres/vignettedallage.png) center/cover;
+}
+#dessusmu {
+  background: url(../images/pierres/vignettedessusmu.png) center/cover;
+}
+#entourageporte {
+  background: url(../images/pierres/vignetteentourageporte.png) center/cover;
+}
+#escaliermarche {
+  background: url(../images/pierres/vignetteescaliermarche.png) center/cover;
+}
+#frise {
+  background: url(../images/pierres/vignettefrise.png) center/cover;
+}
+#linteau {
+  background: url(../images/pierres/vignettelinteau.png) center/ cover;
+}
+#margelle {
+  background: url(../images/pierres/vignettemargelle.png) center/cover;
+}
+#pierrebatiment {
+  background: url(../images/pierres/vignettepierrebatiment1.png) center/cover;
+}
+#soubassement {
+  background: url(../images/pierres/vignettesoubassement.png) center/cover;
+}
+#tablebanc {
+  background: url(../images/pierres/vignettetablebanc.png) center/cover;
+}
+#vasque {
+  background: url(../images/pierres/vignettevasque.png) center/cover;
+}
+#baignoire {
+  background: url(../images/pierres/vignettebaignoire.png) center/cover;
+}
+#receveur {
+  background: url(../images/pierres/vignettereceveur.png) center/cover;
+}
+#evier {
+  background: url(../images/pierres/vignetteevier.png) center/cover;
+}
+#pdt {
+  background: url(../images/pierres/vignettepdt.png) center/cover;
+}
+#gravure {
+  background: url(../images/pierres/vignettegravure.png) center/cover;
+}
+#creation {
+  background: url(../images/pierres/vignettecreation.png) center/cover;
+}
+#brique {
+  background: url(../images/pierres/vignettebrique.png) center/cover;
+}
+
+#croix {
+  visibility: hidden;
+  color: blanchedalmond;
+  position: absolute;
+  z-index: 100;
+  left: 15px;
+  top: 30px;
+  font-size: 2rem;
+}
+
+/** img-carousel **/
+#imgages-carousel {
+  z-index: 10;
+  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  display: none;
+  border: blanchedalmond 5px solid;
+  border-radius: 20px;
+  background-color: black;
+  align-items: center;
+  justify-items: center;
+  padding: 40px 0px;
+  height: 65vh;
+  width: 600px;
+}
+.img-carousel-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.img-carousel {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 5px;
+  height: 100%;
+  width: 100%;
+}
+.img-carousel div {
+  flex: none;
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.img-carousel div img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+}
+.img-carousel div p {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.img-carousel-container button {
+  position: absolute;
+  top: calc(50% - 15px);
+  transform: translateY(-50%);
+  border: none;
+  background-color: rgba(255, 193, 7, 0.7);
+  color: #000;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  outline: none;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+#prev {
+  left: 10px;
+}
+#next {
+  right: 10px;
+}
+.img-carousel-container:hover button {
+  opacity: 1;
+}
+.img-carousel-container button:hover {
+  background-color: #ffc107;
+}
+
+/** custom scrollbar **/
+.img-carousel::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.img-carousel::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 10px;
+  visibility: hidden;
+}
+.img-carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.img-carousel-container:hover .img-carousel::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+@media screen and (max-width: 800px) {
+  .doigt {
+    display: block;
+  }
+  .scroll {
+    display: none;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  h1 span {
+    font-size: 1.8rem;
+  }
+  .h2 {
+    margin-right: 0;
+    margin-left: 0;
+    width: 150px;
+  }
+
+  /** img-carousel portable **/
+  #imgages-carousel {
+    width: 300px;
+    height: 40vh;
+  }
+  .img-carousel div img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 50%;
+    width: 90%;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+  .logopage img {
+    width: 18%;
+    top: 100px;
+    left: 52%;
+  }
+}
+
+@keyframes textanim {
+  from {
+    color: blanchedalmond;
+  }
+  to {
+    color: black;
+  }
+}

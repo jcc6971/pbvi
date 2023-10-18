@@ -63,7 +63,6 @@ selectionh2.forEach((list) => {
       croix.addEventListener("click", (e) => {
         imgagescarousel.style.display = "none";
       });
-
       carousel.scrollTo(0, 0);
     }
   });

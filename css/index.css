@@ -7,7 +7,7 @@ body {
   background: black center/cover;
 }
 
-body:before {
+/* body:before {
   content: "";
   position: absolute;
   height: 100%;
@@ -19,9 +19,9 @@ body:before {
   animation: animBefore 2s ease forwards;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-}
+} */
 
-@-webkit-keyframes animBefore {
+/* @-webkit-keyframes animBefore {
   to {
     opacity: 0;
   }
@@ -31,8 +31,8 @@ body:before {
   to {
     opacity: 0;
   }
-}
-@-webkit-@keyframes logo {
+} */
+@-webkit-keyframes logo {
   0% {
     transform: scale(0.1);
   }
@@ -79,15 +79,30 @@ h1 {
   width: 90%;
   margin: 0 auto;
 }
+h2 {
+  font-family: "lora";
+  font-size: 1.2rem;
+  text-align: center;
+  color: blanchedalmond;
+}
+h3 {
+  font-family: "lora";
+  font-size: 1.2rem;
+  text-align: center;
+  color: blanchedalmond;
+}
 p {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
-
+  font-family: "lora";
   font-size: 1.2rem;
-
   color: blanchedalmond;
+}
+p a {
+  font-family: "lora";
+  color: #e5b061;
+  font-style: italic;
 }
 @media screen and (max-width: 700px) {
   .logocomplet {
@@ -96,5 +111,11 @@ p {
   }
   h1 {
     font-size: 3.3rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
   }
 }
